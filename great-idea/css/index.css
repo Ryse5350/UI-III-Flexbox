@@ -84,6 +84,9 @@ nav a {
 	display: flex;
 	justify-content: space-between;
 }
+img.logo{
+	max-width: 100%;
+}
 .head-main {
 	display: flex;
 	flex-wrap: nowrap;
