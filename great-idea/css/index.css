@@ -151,20 +151,20 @@ nav a:hover {
 	margin-bottom: 3vh;
 }
 .serv-hr {
-	margin: 4vh 0;
+	margin: 2vh 0;
 }
 .serv-body {
 	display: flex;
-	flex-flow: row wrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-around;
-	height: 80vh;
 }
 .serv-body section {
 	width: 48%;
 	border: 1px solid black;
 	padding: 2%;
 	background-color: whitesmoke;
+	margin: 2vh 0;
 }
 .serv-body button {
 	background-color: white;
@@ -184,12 +184,44 @@ nav a:hover {
 	justify-content: space-between;
 	margin-bottom: 2vh;
 }
-.foot-text {
-	width: 45%;
+.foot-text, .serv-inf {
+	width: 48%;
+}
+.serv-inf {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+img.services-info-img {
+	width: 100%;
 }
 .foot-text ul {
 	margin-top: 3vh;
 }
 .foot-text li {
 	margin-bottom: 2vh;
+}
+@media(max-width: 500px) {
+	body {
+		width: 95%;
+	}
+	.serv-body {
+		flex-direction: column;
+	}
+	.serv-body section {
+		width: 100%;
+	}
+	nav {
+		flex-direction: column-reverse;
+	}
+	.links {
+		width: 100%;
+		margin-top: 2vh;
+	}
+	img.services-info-img {
+		display: none;
+	}
+	.foot-text {
+		min-width: 100%;
+	}
 }
