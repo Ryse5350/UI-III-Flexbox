@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol {
 	list-style: none;
 }
 blockquote, q {
@@ -72,7 +72,8 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 5vh;
+	margin-bottom: 4vh;
+	margin-top: 2vh;
 }
 nav a {
 	text-decoration: none;
@@ -140,3 +141,55 @@ nav a:hover {
 	animation-duration: 0.25s;
 }
 /* Services page */
+
+.services-header-img {
+	width: 100%;
+	margin-bottom: 4vh;
+}
+#services-header {
+	font-size: 250%;
+	margin-bottom: 3vh;
+}
+.serv-hr {
+	margin: 4vh 0;
+}
+.serv-body {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-around;
+	height: 80vh;
+}
+.serv-body section {
+	width: 48%;
+	border: 1px solid black;
+	padding: 2%;
+	background-color: whitesmoke;
+}
+.serv-body button {
+	background-color: white;
+	padding: 1% 5%;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 4%;
+}
+.serv-body h2 {
+	font-size: 120%;
+}
+#bottom-hr {
+	border: 1px solid black;
+}
+.serv-foot {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2vh;
+}
+.foot-text {
+	width: 45%;
+}
+.foot-text ul {
+	margin-top: 3vh;
+}
+.foot-text li {
+	margin-bottom: 2vh;
+}
